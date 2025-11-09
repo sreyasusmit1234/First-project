@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Centre</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #e69cdccf;
+    margin: 0; padding: 0;
+  }
+  header {
+    background: #cc85b4;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 254, 255);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  .hero {
+    background: url('https://i.pinimg.com/originals/2c/17/c3/2c17c35051314624349f4fa57794a91f.gif') no-repeat center center/cover;
+    height: 200px;
+    color: rgb(158, 67, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #dda7c9d9;
+  }
+  .pets-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .pet-card {
+    background: #eeceda;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(78, 170, 213, 0.753);
+    transition: transform 0.3s ease;
+  }
+  .pet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4);
+  }
+  .pet-card img {
+    border-radius: 15px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .pet-name {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #ccdceb;
+  }
+  .pet-desc {
+    margin: 10px 0;
+    color: #ccdceb;
+    font-size: 1em;
+  }
+  .adopt-btn {
+    background-color: #FAE7EB;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(205, 87, 138, 0.847);
+    transition: background-color 0.3s;
+  }
+  .adopt-btn:hover {
+    background-color: #c07aa0ce;
+  }
+</style>
+</head>
+<body>
+ <nav style="background:rgba(78, 170, 213, 0.753); display:flex; justify-content:center; gap:32px; padding:14px;">
+  <a href="#home" style="color:white; text-decoration:none; font-size:1.2em; transition:color 0.2s;">Home</a>
+  <a href="#pets" style="color:white; text-decoration:none; font-size:1.2em;">Available Pets</a>
+  <a href="#about" style="color:white; text-decoration:none; font-size:1.2em;">About</a>
+  </nav>
+<header>Pet Adoption Center</header>
+
+<div class="hero">Find Your New Best Friend</div>
+
+<section class="pets-section">
+  <div class="pet-card">
+    <img src="https://i.pinimg.com/736x/50/96/4d/50964dd2dde0828247aaf26f697f93aa.jpg" alt="Cat" />
+    <div class="pet-name">Luna</div>
+    <div class="pet-desc">Playful and affectionate kitten looking for a loving home.</div>
+    <button class="adopt-btn">Adopt Me</button>
+  </div>
+  <div class="pet-card">
+    <img src="https://i.pinimg.com/736x/5d/94/f5/5d94f54eb60fa70a9bf3a79851c51121.jpg" alt="Dog" />
+    <div class="pet-name">Charlie</div>
+    <div class="pet-desc">Friendly puppy who loves long walks and cuddles.</div>
+    <button class="adopt-btn">Adopt Me</button>
+  </div>
+  <div class="pet-card">
+    <img src="https://i.pinimg.com/736x/6b/4c/16/6b4c161d91c171ede9fdbca65b3d9941.jpg" alt="Rabbit" />
+    <div class="pet-name">Thumper</div>
+    <div class="pet-desc">Gentle and curious bunny who enjoys fresh veggies.</div>
+    <button class="adopt-btn">Adopt Me</button>
+  </div>
+  <div class="pet-card">
+    <img src="https://i.pinimg.com/736x/14/4d/fd/144dfd5faf2442e86ae77a08ec05cce5.jpg" alt="Hamster" />
+    <div class="pet-name">Bob</div>
+    <div class="pet-desc">Goofy and energetic hamster who loves to run around and play all day and night.</div>
+    <button class="adopt-btn">Adopt Me</button>
+  </div>
+ <div class="pet-card">
+    <img src="https://i.pinimg.com/736x/5a/5f/b3/5a5fb373098586bccc4b3e786be505b4.jpg" alt="Turtle" />
+    <div class="pet-name">Meow</div>
+    <div class="pet-desc">Shy and introverted turtle ready to find her family. Loves to chew on berries.</div>
+    <button class="adopt-btn">Adopt Me</button>
+  </div>
+ <div class="pet-card">
+    <img src="https://i.pinimg.com/736x/42/ab/7d/42ab7d711e872bdaeae65567a29047a0.jpg" alt="Snake" />
+    <div class="pet-name">Ziggy</div>
+    <div class="pet-desc">Scaley friend who loves to play in the sand and make new friends.</div>
+    <button class="adopt-btn">Adopt Me</button>
+  </div>
+  <section style="max-width:700px; margin: 60px auto 0; background:rgba(78, 170, 213, 0.753); border-radius:20px; padding:24px; text-align:center; box-shadow:0 3px 12px rgba(255,105,180,0.1);">
+  <h2 style="color:#ff66a3; font-family:'Comic Sans MS', cursive;">Our Mission</h2>
+  <p style="color:#f9f5f7; font-size:1.1em;">At Pet Adoption Center, we connect adorable pets with loving families. Every animal deserves a home and happiness!</p>
+</section>
+<footer style="max-width:700px; margin: 60px auto 0; background:rgba(78, 170, 213, 0.753); border-radius:20px; padding:24px; text-align:center; box-shadow:0 3px 12px rgba(255,105,180,0.1);">
+ <h2 style="color:#ff66a3; font-family:'Comic Sans MS', cursive;">Made with 🐾 by Sreya S</h2>
+<p style="color:#f9f5f7; font-size:1.1em;">Contact: <a href="mailto:ysreyasusmit1234@gmail.com" style="color:white;">Email</a></p>
+</section>  
+</footer>
+
+</section>
+</body>
+</html>
